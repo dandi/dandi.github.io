@@ -12,4 +12,4 @@ learning, and the willingness to experiment with new ideas and technologies.
 
 ## Current open positions
 
-1. [Software Developer at Dartmouth](https://searchjobs.dartmouth.edu/postings/search?query=Center+for+Open+Neuroscience)
+N/A
