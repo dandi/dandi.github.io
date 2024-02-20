@@ -99,3 +99,19 @@
   number_educ: 2
   education1: PhD Computational Neuroscience (Complex Systems), Pierre et Marie Curie (Sorbonne Université)
   education2: MD, Iran Univ of Med Sci
+
+- name: Kabilar Gunalan
+  photo: ../assets/team/Kabilar_Gunalan.jpg
+  info: Research Scientist, MIT
+  email: kabi@mit.edu
+  number_educ: 2
+  education1: PhD Biomedical Engineering, Case Western Reserve University  
+  education2: MD, Case Western Reserve University
+
+- name: Aaron Kanzer
+  photo: ../assets/team/Aaron_Kanzer.png
+  info: Software Engineer, MIT
+  email: akanzer@mit.edu
+  number_educ: 2
+  education1: M.S. in Computer Science, Northeastern University
+  education2: B.S. in Economics & Political Science, Northeastern University
