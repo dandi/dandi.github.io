@@ -1,4 +1,6 @@
-# DANDI project website
+# The DANDI project Website
+
+This is the website for the DANDI project.
 
 This website is powered by Jekyll and some Bootstrap, Bootwatch. Go to 
 *aboutwebsite.md*  to learn how to copy and modify this page for your purpose. 
@@ -13,8 +15,6 @@ docker run --rm -it --volume="$PWD:/srv/jekyll" \
   --env JEKYLL_ENV=development -p 4000:4000 \
   jekyll/jekyll:4.0.1  jekyll serve --config _config.yml
 ```
-
-## Acknowledgements
 
 A big thank you to https://github.com/mpa139/allanlab for setting up this 
 framework.
