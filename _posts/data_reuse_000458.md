@@ -1,24 +1,40 @@
-Unraveling Anesthesia's Effect on Brain Activity
-Data Reuse Highlight: This blog entry is part of an ongoing series that showcases examples of data reuse and reanalysis using publicly available data on DANDI.
+# Unraveling Anesthesia's Effect on Brain Activity
+_Data Reuse Highlight: This blog entry is part of an ongoing series that showcases examples of data reuse and reanalysis using publicly available data on DANDI._
+
 Have you ever wondered what happens to your brain when you're under anesthesia? What neural changes coincide with that dramatic loss of consciousness? In this post, we'll explore how two different research teams investigated this fascinating question using the same data from DANDI Archive's Dandiset #000458.
-The Original Study: Peering into the Anesthetized Brain
+
+## The Original Study: Peering into the Anesthetized Brain
 In June 2023, Dr. Leslie Claar and colleagues from the Allen Institute published their groundbreaking findings in the journal eLife in the article, “Cortico-thalamo-cortical interactions modulate electrically evoked EEG responses in mice”. Their approach was comprehensive: they stimulated mouse cortex while simultaneously recording with EEG and neuropixels probes, comparing brain activity during wakefulness and under isoflurane anesthesia.
+
 In awake mice, Claar's team observed a robust event-related potential (ERP) when they delivered pulsatile electrical stimulation to deep layers of the motor cortex. This ERP coincided with a distinct pattern of neural spiking, both locally in the motor cortex and in distant sensorimotor-related thalamic nuclei. The response followed a three-act play: initial excitation within 25 milliseconds, a period of quiescence for about 125 milliseconds, and finally, a strong rebound excitation before returning to baseline.
 When the mice were under anesthesia, the story changed dramatically. The ERP's amplitude and complexity plummeted in response to the same stimulation. While the initial excitation persisted in the motor cortex, it vanished in the thalamic nuclei. The rebound excitation, along with its corresponding ERP component at around 180 milliseconds, was significantly weakened.
+
 Based on these observations, Claar and colleagues proposed that interactions between the cortex and thalamus are responsible for the rebound excitation phase of the stimulus response. This rebound excitation, in turn, drives the second component of the ERP – a crucial signal of wakefulness.
 
-A New Perspective: Zooming in on Neural Signaling
+## A New Perspective: Zooming in on Neural Signaling
 Just a few months later, in November 2023, Dr. Richard Burman and colleagues at the University of Oxford published their findings in the journal Neuron with the article, “Active cortical networks promote shunting fast synaptic inhibition in vivo.” They approached the same question from a different angle, focusing on the behavior of a specific receptor type: GABAA.
+
 Burman's team used a technique called in vivo gramicidin perforated patch-clamp recording, combined with optogenetic activation of GABAergic synaptic inputs. They compared the GABAA receptor equilibrium potential (EGABAAR) in mice during wakefulness and under urethane anesthesia.
+
 Their findings were striking. In anesthetized mice, GABAA receptor responses were significantly hyperpolarizing, with an average equilibrium potential of -80.8mV. In awake mice, however, these responses could be either hyperpolarizing or depolarizing, averaging at -63.9mV – a state known as the "shunting" regime.
+
 Burman et al. hypothesized that the higher network activity in the awake state leads to a higher concentration of intracellular chloride, which in turn depolarizes the GABAA receptor equilibrium potential. Anesthesia, by broadly suppressing neural activity, indirectly hyperpolarizes EGABAAR.
+
 To test this hypothesis and connect their findings to broader network activity, Burman's team turned to the data from Dandiset #000458 – the very same dataset used by Claar et al. By reanalyzing this data and manipulating a computational network model, they found that setting the EGABAAR parameter to the shunting regime (-60mV) reproduced spiking responses similar to those seen in awake mice. Conversely, setting it to the hyperpolarizing regime (-80mV) mimicked the responses seen in anesthetized mice.
-Bridging Scales: From Synapses to Networks
+
+## Bridging Scales: From Synapses to Networks
 Together, these two studies provide a rich, multi-level account of what happens to brain activity under anesthesia. They span from macroscale brain signals recorded by EEG all the way down to microscale synaptic responses from a single receptor type. The population spiking data from Dandiset #000458 serves as a crucial bridge between these levels, allowing Burman et al. to explicitly connect their work to the broader field of anesthesia research.
+
 However, it's important to note some key differences between the two studies. Claar et al. used isoflurane anesthesia and stimulated layers 5/6 of the cortex, while Burman et al. used urethane anesthesia and recorded from layer 2/3. Additionally, while Claar et al. found the most dramatic differences between waking and anesthetized states around 180 ms after stimulation, Burman et al. focused their reanalysis on the initial spiking response within 15 ms of stimulation.
+
 These differences highlight the potential for further reanalysis of Dandiset #000458. Future studies could explore more similar experimental conditions, conduct a more thorough treatment of relevant response time periods, or investigate different aspects of anesthesia's effects altogether.
-The Power of Open Data
+
+## The Power of Open Data
 [Insert quote from Burman et al. about their experience with DANDI]
+
 As this case study demonstrates, the availability of open datasets like those on DANDI can accelerate scientific discovery by allowing researchers to build upon and extend each other's work. Whether you're a seasoned neuroscientist or a curious data analyst, we encourage you to explore the wealth of data available on DANDI. Who knows what insights you might uncover?
-To get you started, we've prepared a Jupyter notebook demonstrating some basic reanalysis of Dandiset #000458. [Insert link or instructions for accessing the notebook]
+To get you started, we've prepared a Jupyter notebook demonstrating some basic reanalysis of Dandiset #000458.
+
+[Insert link or instructions for accessing the notebook]
+
 Remember, every dataset tells a story – and with open science, you have the opportunity to uncover new chapters. Happy exploring!
