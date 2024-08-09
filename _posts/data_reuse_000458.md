@@ -34,9 +34,10 @@ However, it's important to note some key differences between the two studies. Cl
 These differences highlight the potential for further reanalysis of Dandiset #000458. Future studies could explore more similar experimental conditions, conduct a more thorough treatment of relevant response time periods, or investigate different aspects of anesthesia's effects altogether.
 
 ## The Power of Open Data
-[Insert quote from Burman et al. about their experience with DANDI]
+[Insert quote(s) from Burman et al. and Claar et al. about their experience with DANDI]
 
-As this case study demonstrates, the availability of open datasets like those on DANDI can accelerate scientific discovery by allowing researchers to build upon and extend each other's work. Whether you're a seasoned neuroscientist or a curious data analyst, we encourage you to explore the wealth of data available on DANDI. Who knows what insights you might uncover?
-To get you started, we've prepared a Jupyter [notebook](https://github.com/dandi/example-notebooks/blob/566f8415babd46054c79257f7b80416eafea823b/000458/AllenInstitute/reanalysis.ipynb) demonstrating some basic reanalysis of Dandiset #000458.
+[Insert brief commentary on quote(s)]
 
-Remember, every dataset tells a story – and with open science, you have the opportunity to uncover new chapters. Happy exploring!
+For those inspired by the work of Claar, Burman, and their teams, the journey doesn’t end here. To get you started, we've prepared a Jupyter [notebook](https://github.com/dandi/example-notebooks/blob/566f8415babd46054c79257f7b80416eafea823b/000458/AllenInstitute/reanalysis.ipynb) demonstrating some basic reanalysis of Dandiset #000458. This tool will help you dive right into the data, guiding you through the initial steps of exploration and analysis.
+
+By engaging with this open science platform, you become part of a larger community of researchers who are building on each other's work and driving the field forward. In the world of open science, collaboration and curiosity drive discovery—so why not see where the data takes you?
