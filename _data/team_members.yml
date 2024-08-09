@@ -1,7 +1,7 @@
 - name: Satrajit S Ghosh
   photo: ../assets/team/Satrajit_S_Ghosh.png
   info: >
-    Director of Open Data in Neuroscience Initiative and Principal Research Scientist at MIT; Assistant 
+    Director of Open Data in Neuroscience Initiative and Principal Research Scientist at MIT; Assistant
     Professor of Otolaryngology at Harvard Medical School
   email: satra@mit.edu
   number_educ: 3
@@ -105,7 +105,7 @@
   info: Research Scientist, MIT
   email: kabi@mit.edu
   number_educ: 2
-  education1: PhD Biomedical Engineering, Case Western Reserve University  
+  education1: PhD Biomedical Engineering, Case Western Reserve University
   education2: MD, Case Western Reserve University
 
 - name: Aaron Kanzer
