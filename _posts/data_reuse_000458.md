@@ -11,7 +11,7 @@ Have you ever wondered what happens to your brain when you're under anesthesia? 
 In this post, we'll explore how two different research teams investigated this fascinating question using the same data from DANDI Archive's Dandiset [#000458](https://dandiarchive.org/dandiset/000458).
 
 ## The Original Study: Peering into the Anesthetized Brain
-In June 2023, Dr. Leslie Claar and colleagues from the Allen Institute published their groundbreaking findings in the journal _eLife_ in the article, [“Cortico-thalamo-cortical interactions modulate electrically evoked EEG responses in mice”](https://doi.org/10.7554/eLife.84630.2).
+In June 2023, Dr. Leslie Claar and colleagues from the Allen Institute published their groundbreaking findings in the journal _eLife_ in the article, [“Cortico-thalamo-cortical interactions modulate electrically evoked EEG responses in mice”](https://doi.org/10.7554/eLife.84630.3).
 Their approach was comprehensive: they stimulated mouse cortex while simultaneously recording with [electroencephelography](https://doi.org/10.1016/B978-141603618-0.10024-4) (EEG) and [neuropixels probes](https://www.neuropixels.org/), comparing brain activity during wakefulness and under isoflurane anesthesia.
 
 In awake mice, Claar's team observed a robust [event-related potential](10.4103/0972-6748.57865) (ERP) when they delivered pulsatile electrical stimulation to deep layers of the [motor cortex](https://doi.org/10.1016/B0-08-043076-7/03460-4).
