@@ -6,17 +6,17 @@ author: DANDI team
 
 ## Online hackathon for human ex-vivo microscopy
 
-The goal of this set of events is to introduce the BICCN human ex vivo MRI and 
-microscopy datasets, involve the relevant communities to develop and explore 
-scientific ideas, create tooling around these and future datasets to make it 
-easy, and plan towards development of an online, digital, cellular atlas and 
-knowledge base of the human brain. 
+The goal of this set of events is to introduce the BICCN human ex vivo MRI and
+microscopy datasets, involve the relevant communities to develop and explore
+scientific ideas, create tooling around these and future datasets to make it
+easy, and plan towards development of an online, digital, cellular atlas and
+knowledge base of the human brain.
 
 **Date/Time: April 21 - 22, 2022. 9am - 6pm ET**
 
 **Online: Link will be sent to registered participants.**
 
-If you are interested in participating please fill in this form to be sent 
+If you are interested in participating please fill in this form to be sent
 announcements: [Register here](https://forms.gle/xe9cJrZNcXX5aLddA)
 
 ### Pre-meeting presentations
@@ -46,15 +46,15 @@ The events will run 9 - 6 ET to accommodate multiple time zones. Participants ar
 
 -  DANDI+Microscopy Starter Kit: We will generate a set Starter Kit that makes it easy for users to navigate these and other Dandisets, including easier visualization of individual files.
 
-- Dandiset Abstraction Layer: 
-    - Create a set of scripts to make it easy to programmatically access these Dandisets 
+- Dandiset Abstraction Layer:
+    - Create a set of scripts to make it easy to programmatically access these Dandisets
     - Be able to view and compute on them.
 
 Unconference session (11.30 - 12.30 ET)
 
 #### Day 2: April 22, 2022 (9 - 6 ET)
 
-- Visualization/Annotation: 
+- Visualization/Annotation:
     - Develop a visualization of a single slab or a set of related chunks
     - Develop the steps to annotate using NeuroTrAle
 
@@ -63,5 +63,5 @@ Unconference session (11.30 - 12.30 ET)
 
 Unconference session (11.30 - 12.30 ET)
 
-Please feel free to comment on this [community 
+Please feel free to comment on this [community
 doc](https://docs.google.com/document/d/1jZPCXtYAjQJGjjhMCWl0wCiYwIssGqZfb7qcyiAZXio/edit).

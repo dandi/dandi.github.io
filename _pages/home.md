@@ -14,19 +14,19 @@ necessary data and metadata that you need, is at least what we should be storing
 
 DANDI provides:
 
-1. A cloud-based platform to store, process, and disseminate data. You can use 
+1. A cloud-based platform to store, process, and disseminate data. You can use
    DANDI to collaborate and publish datasets.
-2. Open access to data to enable secondary uses of data outside the intent 
+2. Open access to data to enable secondary uses of data outside the intent
    of the study.
-3. Optimize data storage and access through partnerships, compression and 
+3. Optimize data storage and access through partnerships, compression and
    accessibility technologies.
-4. Enables reproducible practices and publications through data standards such 
+4. Enables reproducible practices and publications through data standards such
    as NWB and BIDS, which provide extensive metadata.
 5. The platform is not just an endpoint to dump data, it is intended as a living
    repository that enables collaboration within and across labs, and for others,
    the entry point for research.
 
-For a better view of how DANDI might help you, please see these 
+For a better view of how DANDI might help you, please see these
 <a href="https://docs.google.com/presentation/d/1hqw0vgNmelNnkPLuCSA1L5Rlu2rXeZEF6bsgc0y6Ve4/edit#slide=id.g113edc9c042_0_67" target="_blank"> onboarding slides</a>.
 
 <!--
