@@ -1,3 +1,9 @@
+---
+layout: post
+title: Data Reuse Showcase
+author: CatalystNeuro team
+---
+
 # Unraveling Anesthesia's Effect on Brain Activity
 _Data Reuse Highlight: This blog entry is part of an ongoing series that showcases examples of data reuse and reanalysis using publicly available data on DANDI._
 
