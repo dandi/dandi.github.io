@@ -18,4 +18,3 @@ repos:
     rev: v2.3.0
     hooks:
     -   id: codespell
-        exclude: ^(dandi/_version\.py|dandi/due\.py|versioneer\.py)$
