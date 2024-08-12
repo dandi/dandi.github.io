@@ -12,10 +12,10 @@ In this post, we'll explore how two different research teams investigated this f
 
 ## The Original Study: Peering into the Anesthetized Brain
 In June 2023, Dr. Leslie Claar and colleagues from the Allen Institute published their groundbreaking findings in the journal _eLife_ in the article, [“Cortico-thalamo-cortical interactions modulate electrically evoked EEG responses in mice”](https://doi.org/10.7554/eLife.84630.2).
-Their approach was comprehensive: they stimulated mouse cortex while simultaneously recording with EEG and neuropixels probes, comparing brain activity during wakefulness and under isoflurane anesthesia.
+Their approach was comprehensive: they stimulated mouse cortex while simultaneously recording with [electroencephelography](https://doi.org/10.1016/B978-141603618-0.10024-4) (EEG) and [neuropixels probes](https://www.neuropixels.org/), comparing brain activity during wakefulness and under isoflurane anesthesia.
 
-In awake mice, Claar's team observed a robust event-related potential (ERP) when they delivered pulsatile electrical stimulation to deep layers of the motor cortex.
-This ERP coincided with a distinct pattern of neural spiking, both locally in the motor cortex and in distant sensorimotor-related thalamic nuclei. The response followed a three-act play: initial excitation within 25 milliseconds, a period of quiescence for about 125 milliseconds, and finally, a strong rebound excitation before returning to baseline.
+In awake mice, Claar's team observed a robust [event-related potential](10.4103/0972-6748.57865) (ERP) when they delivered pulsatile electrical stimulation to deep layers of the [motor cortex](https://doi.org/10.1016/B0-08-043076-7/03460-4).
+This ERP coincided with a distinct pattern of neural spiking, both locally in the motor cortex and in distant sensorimotor-related [thalamic nuclei](https://www.ncbi.nlm.nih.gov/books/NBK549908). The response followed a three-act play: initial excitation within 25 milliseconds, a period of quiescence for about 125 milliseconds, and finally, a strong rebound excitation before returning to baseline.
 When the mice were under anesthesia, the story changed dramatically.
 The ERP's amplitude and complexity plummeted in response to the same stimulation.
 While the initial excitation persisted in the motor cortex, it vanished in the thalamic nuclei.
@@ -29,17 +29,17 @@ After their experiments, Claar and her team published their data on DANDI, ensur
 ## A New Perspective: Zooming in on Synaptic Potentials
 Just a few months later, in November 2023, Dr. Richard Burman and colleagues at the University of Oxford wrote a paper that included reanalysis of this data.
 Their findings were published in the journal _Neuron_ with the article, [“Active cortical networks promote shunting fast synaptic inhibition _in vivo_”](https://doi.org/10.1016/j.neuron.2023.08.005).
-They also investigated the effects of anesthesia on brain activity, but narrowed their focus to the differential function of a specific receptor subtype: GABA<sub>A</sub>R.
+They also investigated the effects of anesthesia on brain activity, but narrowed their focus to the differential function of a specific receptor subtype: [GABA<sub>A</sub>R](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2648504/).
 
-Burman's team used a technique called _in vivo_ gramicidin perforated patch-clamp recording, combined with optogenetic activation of GABAergic synaptic inputs.
+Burman's team used a technique called [_in vivo_ gramicidin perforated patch-clamp recording](10.1254/fpj.113.339), combined with [optogenetic](10.1097/ICU.0000000000000140) activation of GABAergic synaptic inputs.
 They compared the GABA<sub>A</sub> receptor equilibrium potential (E<sub>GABA<sub>A</sub>R</sub>) in mice during wakefulness and under urethane anesthesia.
 
 Their findings were striking. In anesthetized mice, GABA<sub>A</sub> receptor responses were significantly hyperpolarizing, with an average equilibrium potential of -80.8mV.
-In awake mice, however, these responses could be either hyperpolarizing or depolarizing, averaging at -63.9mV – a state known as the "shunting" regime.
+In awake mice, however, these responses could be either hyperpolarizing or depolarizing, averaging at -63.9mV – a state known as the "[shunting](https://en.wikipedia.org/wiki/Shunting_inhibition)" regime.
 
 Burman et al. hypothesized that the higher network activity in the awake state leads to a higher concentration of intracellular chloride, which in turn depolarizes the GABA<sub>A</sub> receptor equilibrium potential.
 Anesthesia, by broadly suppressing neural activity, indirectly hyperpolarizes E<sub>GABA<sub>A</sub>R</sub>.
-They confirmed this hypothesis by locally injecting an AMPA receptor antagonist (NBQX) which suppressed network activity, and hyperpolarized E<sub>GABA<sub>A</sub>R</sub> to -78.0mV.
+They confirmed this hypothesis by locally injecting an AMPA receptor antagonist ([NBQX](https://www.tocris.com/products/nbqx-disodium-salt_1044)) which suppressed network activity, and hyperpolarized E<sub>GABA<sub>A</sub>R</sub> to -78.0mV.
 
 The Oxford researchers also hypothesized that changes in E<sub>GABA<sub>A</sub>R</sub> would lead to changes in network activity, resulting in a bi-directional relationship between the two quantities.
 
