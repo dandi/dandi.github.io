@@ -24,7 +24,7 @@ The rebound excitation, along with its corresponding ERP component at around 180
 Based on these observations, Claar and colleagues proposed that interactions between the cortex and thalamus are responsible for the rebound excitation phase of the stimulus response.
 This rebound excitation, in turn, drives the second component of the ERP – a crucial signal of wakefulness.
 
-After their experiments, Claar and her team published their data on DANDI, ensuring that it would remain publicly accessible for any future researchers who wanted to use it.
+After their experiments, Claar and her team published their data on DANDI, ensuring that it would remain publicly accessible for any future researchers who wanted to use it. The dataset and manuscript were prepared and published concurrently, which ensured that the dataset included all the paper-relevant data and metadata and curious reviewers could inspect the data directly if they so wished.
 
 ## A New Perspective: Zooming in on Synaptic Potentials
 Just a few months later, in November 2023, Dr. Richard Burman and colleagues at the University of Oxford wrote a paper that included reanalysis of this data.
