@@ -58,12 +58,19 @@ Additionally, while Claar et al. found the most dramatic differences between wak
 These differences highlight the potential for further reanalysis of Dandiset [#000458](https://dandiarchive.org/dandiset/000458).
 Future studies could explore more similar experimental conditions, conduct a more thorough treatment of relevant response time periods, or investigate different aspects of anesthesia's effects altogether.
 
-## The Power of Open Data
-[Insert quote(s) from Burman et al. and Claar et al. about their experience with DANDI]
+## A Call to Action: Engaging with the Open Science Community
+For those inspired by the work of Claar, Burman, and their teams, the journey doesn’t end here.
+We encourage readers from all backgrounds to take advantage of this open science platform by publishing and reanalyzing data on DANDI.
+We are confident that it will be a smooth and rewarding experience, but don't just take our word for it -- listen to what Dr. Leslie Claar and Dr. Richard Burman have to say,
 
-[Insert brief commentary on quote(s)]
+> "After organizing our dataset into NWB format, validating and uploading our files was straightforward using a few simple commands from the DANDI Python Client. 
+> The tools are well-documented, which made the process of uploading and publishing quite smooth. 
+> Within a few months of publishing on DANDI, others were already interested in using our dataset."
+> -- Dr. Leslie Claar
 
-For those inspired by the work of Claar, Burman, and their teams, the journey doesn’t end here. To get you started, we've prepared a Jupyter [notebook](https://github.com/dandi/example-notebooks/blob/566f8415babd46054c79257f7b80416eafea823b/000458/AllenInstitute/reanalysis.ipynb) demonstrating some basic reanalysis of Dandiset [#000458](https://dandiarchive.org/dandiset/000458).
+[Insert quote from Dr. Richard Burman]
+
+To get you started on your own reanalysis project, we've prepared a Jupyter [notebook](https://github.com/dandi/example-notebooks/blob/566f8415babd46054c79257f7b80416eafea823b/000458/AllenInstitute/reanalysis.ipynb) demonstrating some basic reanalysis of Dandiset [#000458](https://dandiarchive.org/dandiset/000458).
 This tool will help you dive right into the data, guiding you through the initial steps of exploration and analysis.
 
 By engaging with this open science platform, you become part of a larger community of researchers who are building on each other's work and driving the field forward. In the world of open science, collaboration and curiosity drive discovery—so why not see where the data takes you?
