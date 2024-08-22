@@ -58,7 +58,7 @@ Additionally, while Claar et al. found the most dramatic differences between wak
 These differences highlight the potential for further reanalysis of Dandiset [#000458](https://dandiarchive.org/dandiset/000458).
 Future studies could explore more similar experimental conditions, conduct a more thorough treatment of relevant response time periods, or investigate different aspects of anesthesia's effects altogether.
 
-## A Call to Action: Engaging with the Open Science Community
+## Engaging with the Open Science Community
 For those inspired by the work of Claar, Burman, and their teams, the journey doesn’t end here.
 We encourage readers from all backgrounds to take advantage of this open science platform by publishing and reanalyzing data on DANDI.
 We are confident that it will be a smooth and rewarding experience, but don't just take our word for it -- listen to what Dr. Leslie Claar and Dr. Richard Burman have to say,
