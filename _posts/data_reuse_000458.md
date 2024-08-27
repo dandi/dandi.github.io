@@ -43,7 +43,7 @@ They confirmed this hypothesis by locally injecting an AMPA receptor antagonist 
 
 The Oxford researchers also hypothesized that changes in E<sub>GABA<sub>A</sub>R</sub> would lead to changes in network activity, resulting in a bi-directional relationship between the two quantities.
 
-To test this hypothesis, Burman and Brodersen's team turned to the data from Dandiset [#000458](https://dandiarchive.org/dandiset/000458) – the very same dataset used by Claar et al.
+To test this hypothesis, Burman and Brodersen's team turned to the data from [Dandiset #000458](https://dandiarchive.org/dandiset/000458) – the very same dataset used by Claar et al.
 By reanalyzing this data and manipulating a computational network model, they found that setting the E<sub>GABA<sub>A</sub>R</sub> parameter to the shunting regime (-60mV) reproduced spiking responses similar to those seen in awake mice.
 Conversely, setting it to the hyperpolarizing regime (-80mV) mimicked the responses seen in anesthetized mice.
 This data provides evidence for the hypothesized bidirectional relationship.
