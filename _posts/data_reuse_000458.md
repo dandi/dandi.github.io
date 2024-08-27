@@ -50,12 +50,12 @@ This data provides evidence for the hypothesized bidirectional relationship.
 
 ## Bridging Scales: From Synapses to Networks
 Together, these two studies provide a rich, multi-level account of what happens to brain activity under anesthesia. They span from macroscale brain signals recorded by EEG all the way down to microscale synaptic responses from a single receptor type.
-The population spiking data from Dandiset [#000458](https://dandiarchive.org/dandiset/000458) serves as a crucial bridge between these levels, allowing Burman et al. to explicitly connect their work to the broader field of anesthesia research.
+The population spiking data from [Dandiset #000458](https://dandiarchive.org/dandiset/000458) serves as a crucial bridge between these levels, allowing Burman et al. to explicitly connect their work to the broader field of anesthesia research.
 
 However, it's important to note some key differences between the two studies. Claar et al. used isoflurane anesthesia and stimulated layers 5/6 of the cortex, while Burman et al. used urethane anesthesia and recorded from layer 2/3.
 Additionally, while Claar et al. found the most dramatic differences between waking and anesthetized states around 180 ms after stimulation, Burman et al. focused their reanalysis on the initial spiking response within 15 ms of stimulation.
 
-These differences highlight the potential for further reanalysis of Dandiset [#000458](https://dandiarchive.org/dandiset/000458).
+These differences highlight the potential for further reanalysis of [Dandiset #000458](https://dandiarchive.org/dandiset/000458).
 Future studies could explore more similar experimental conditions, conduct a more thorough treatment of relevant response time periods, or investigate different aspects of anesthesia's effects altogether.
 
 ## Engaging with the Open Science Community
@@ -73,7 +73,7 @@ We are confident that it will be a smooth and rewarding experience, but don't ju
 > These features make the DANDI archive a treasure trove of useful and re-usable data, unlike the unfortunately still commonplace unstructured data dumps on many other platforms or -- worst of all -- university servers.”
 > -- Dr. Paul Brodersen and Professor Colin Akerman
 
-To get you started on your own reanalysis project, we've prepared a Jupyter [notebook](https://github.com/dandi/example-notebooks/blob/master/000458/AllenInstitute/reanalysis.ipynb) demonstrating some basic reanalysis of Dandiset [#000458](https://dandiarchive.org/dandiset/000458).
+To get you started on your own reanalysis project, we've prepared a Jupyter [notebook](https://github.com/dandi/example-notebooks/blob/master/000458/AllenInstitute/reanalysis.ipynb) demonstrating some basic reanalysis of [Dandiset #000458](https://dandiarchive.org/dandiset/000458).
 This tool will help you dive right into the data, guiding you through the initial steps of exploration and analysis.
 
 By engaging with this open science platform, you become part of a larger community of researchers who are building on each other's work and driving the field forward. In the world of open science, collaboration and curiosity drive discovery—so why not see where the data takes you?
