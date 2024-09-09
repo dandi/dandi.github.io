@@ -75,5 +75,6 @@ We are confident that it will be a smooth and rewarding experience, but don't ju
 
 To get you started on your own reanalysis project, we've prepared a Jupyter [notebook](https://github.com/dandi/example-notebooks/blob/master/000458/AllenInstitute/reanalysis.ipynb) demonstrating some basic reanalysis of [Dandiset #000458](https://dandiarchive.org/dandiset/000458).
 This tool will help you dive right into the data, guiding you through the initial steps of exploration and analysis.
+We have also prepared a Neurosift [walkthrough](https://github.com/dandi/example-notebooks/blob/master/000458/FlatironInstitute/PSTH_neurosift_exploration.md) which demonstrates how to use Neurosift to quickly and easily explore the NWB files in this dataset without even leaving the browser.   
 
 By engaging with this open science platform, you become part of a larger community of researchers who are building on each other's work and driving the field forward. In the world of open science, collaboration and curiosity drive discovery—so why not see where the data takes you?
