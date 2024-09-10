@@ -70,7 +70,7 @@ We are confident that it will be a smooth and rewarding experience, but don't ju
 
 > “The DANDI archive is a fantastic resource with great tooling and exhaustive documentation. Its command line interface makes data retrieval and synchronization as simple as possible (but not simpler!).
 > The standardized and well-documented formats for electrophysiological and neuroimaging data ensure that anyone can quickly find their way around a new archive without requiring extensive feedback from the authors that originally collected the data.
-> These features make the DANDI archive a treasure trove of useful and re-usable data, unlike the unfortunately still commonplace unstructured data dumps on many other platforms or -- worst of all -- university servers.”
+> These features make the DANDI archive a treasure trove of useful and reusable data, unlike the unfortunately still commonplace unstructured data dumps on many other platforms or -- worst of all -- university servers.”
 > -- Dr. Paul Brodersen and Professor Colin Akerman
 
 To get you started on your own reanalysis project, we've prepared a Jupyter [notebook](https://github.com/dandi/example-notebooks/blob/master/000458/AllenInstitute/reanalysis.ipynb) demonstrating some basic reanalysis of [Dandiset #000458](https://dandiarchive.org/dandiset/000458).
