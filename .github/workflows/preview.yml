@@ -1,0 +1,68 @@
+name: Jekyll Site Preview
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      pages: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Install dependencies
+        run: |
+          bundle install
+
+      - name: Build Jekyll site
+        run: |
+          bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Deploy preview
+        run: |
+          # Create a unique branch name for this PR preview
+          BRANCH_NAME="preview-pr-${{ github.event.pull_request.number }}"
+          
+          # Configure git
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          
+          # Create and switch to a new branch for the preview
+          git checkout -b $BRANCH_NAME
+          
+          # Move built site to root (GitHub Pages requires this)
+          mv _site/* ./
+          rm -rf _site
+          
+          # Commit and push the built site
+          git add .
+          git commit -m "Deploy PR preview"
+          git push origin $BRANCH_NAME --force
+
+      - name: Comment PR
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.issue.number;
+            const repoName = context.repo.repo;
+            const ownerName = context.repo.owner;
+            const previewUrl = `https://${ownerName}.github.io/${repoName}/preview-pr-${prNumber}/`;
+            
+            github.rest.issues.createComment({
+              owner: ownerName,
+              repo: repoName,
+              issue_number: prNumber,
+              body: `📝 Preview this PR at: ${previewUrl}`
+            });
