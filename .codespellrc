@@ -1,7 +1,0 @@
-[codespell]
-# Ref: https://github.com/codespell-project/codespell#using-a-config-file
-skip = .git*,*.svg,*.lock,*.min.*,.codespellrc
-check-hidden = true
-# ignore variable definitions in the headers
-ignore-regex = ^ *var +\S+\s*=
-ignore-words-list = rouge
