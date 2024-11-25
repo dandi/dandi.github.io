@@ -1,0 +1,67 @@
+name: Jekyll Site Preview
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-20.04
+    permissions:
+      contents: write
+      pull-requests: write
+      pages: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Jekyll
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ruby-full build-essential zlib1g-dev
+          sudo gem install bundler:2.1.4
+          
+          # Install jekyll and dependencies
+          bundle config set --local path 'vendor/bundle'
+          bundle install
+
+      - name: Build Jekyll site
+        run: |
+          bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Deploy preview
+        run: |
+          BRANCH_NAME="preview-pr-${{ github.event.pull_request.number }}"
+          
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          
+          git checkout -b $BRANCH_NAME
+          
+          # Remove existing content except _site and .git
+          find . -mindepth 1 -maxdepth 1 ! -name '_site' ! -name '.git' -exec rm -rf {} +
+          
+          # Move _site contents to root
+          cp -r _site/* ./
+          rm -rf _site
+          
+          git add .
+          git commit -m "Deploy PR preview"
+          git push origin $BRANCH_NAME --force
+
+      - name: Comment PR
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.issue.number;
+            const repoName = context.repo.repo;
+            const ownerName = context.repo.owner;
+            const previewUrl = `https://${ownerName}.github.io/${repoName}/preview-pr-${prNumber}/`;
+            
+            github.rest.issues.createComment({
+              owner: ownerName,
+              repo: repoName,
+              issue_number: prNumber,
+              body: `📝 Preview this PR at: ${previewUrl}`
+            });
