@@ -1,0 +1,93 @@
+I"}
+<h1>Latest Posts</h1>
+
+<div class="row">
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <p><a href="//2024/09/09/data_reuse_000458.html">
+    <pubtit>Data Reuse Showcase</pubtit>
+  </a>
+   •
+  <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span itemprop="name"><em>CatalystNeuro team</em></span>
+  </span></p>
+
+      <h1 id="unraveling-anesthesias-effect-on-brain-activity">Unraveling Anesthesia’s Effect on Brain Activity</h1>
+      <p><em>Data Reuse Highlight: This blog entry is part of an ongoing series that showcases examples of data reuse and reanalysis using publicly available data on DANDI.</em></p>
+
+    </div>
+  </div>
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <p><a href="//2022/03/08/microscopy-workshop.html">
+    <pubtit>Human ex-vivo microscopy workshop/hackathon</pubtit>
+  </a>
+   •
+  <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span itemprop="name"><em>DANDI team</em></span>
+  </span></p>
+
+      <h2 id="online-hackathon-for-human-ex-vivo-microscopy">Online hackathon for human ex-vivo microscopy</h2>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <p><a href="//2022/03/03/external-links-organize.html">
+    <pubtit>External Links in NWB and DANDI</pubtit>
+  </a>
+   •
+  <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span itemprop="name"><em>Saksham Sharda, CatalystNeuro</em></span>
+  </span></p>
+
+      <h2 id="external-files-in-nwb">External Files in NWB</h2>
+      <p>External Files: video/audio files that are part of the experiment but are not stored in NWB as HDF5 format.</p>
+
+    </div>
+  </div>
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <p><a href="//2021/10/13/dandi-workshop.html">
+    <pubtit>DANDI User Workshop</pubtit>
+  </a>
+   •
+  <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span itemprop="name"><em>DANDI team</em></span>
+  </span></p>
+
+      <h1 id="virtual-hands-on-workshop-nov-1-2021">Virtual hands-on workshop: Nov 1, 2021</h1>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <p><a href="//2021/09/12/introducing-dandi.html">
+    <pubtit>Introducing DANDI</pubtit>
+  </a>
+   •
+  <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span itemprop="name"><em>DANDI team</em></span>
+  </span></p>
+
+      <h1 id="dandi-a-data-archive-and-collaboration-space-for-neurophysiology">DANDI: A data archive and collaboration space for neurophysiology</h1>
+
+    </div>
+  </div>
+
+</div>
+
+:ET
