@@ -6,7 +6,9 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    container: jekyll/jekyll:latest
+    container: 
+      image: jekyll/jekyll:3.8
+      options: --user root
     permissions:
       contents: write
       pull-requests: write
@@ -15,16 +17,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Set up environment
+        run: |
+          gem install bundler:2.1.4
+          bundle config --global silence_root_warning true
+
       - name: Build Jekyll site
         run: |
-          jekyll build
+          bundle install
+          bundle exec jekyll build
         env:
           JEKYLL_ENV: production
 
       - name: Setup git
         run: |
-          # Install git (not included in Jekyll image)
-          apk add --no-cache git
+          apt-get update
+          apt-get install -y git
 
       - name: Deploy preview
         run: |
