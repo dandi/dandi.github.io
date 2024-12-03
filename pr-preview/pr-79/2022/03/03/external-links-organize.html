@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>External Links in NWB and DANDI</title>
+  <meta name="description" content="External Files in NWBExternal Files: video/audio files that are part of the experiment but are not stored in NWB as HDF5 format.">
+  <link rel="stylesheet" href="https://www.dandiarchive.org/css/main.css">
+  <link rel="canonical" href="https://www.dandiarchive.org/2022/03/03/external-links-organize.html">
+  <link rel="shortcut icon" type ="image/x-icon" href="https://www.dandiarchive.org/assets/favicon.ico">
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YFX0BFPME2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YFX0BFPME2');
+</script>
+
+
+
+</head>
+
+
+  <body >
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+  	<div class="navbar-header">
+  	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+  		<span class="sr-only">Toggle navigation</span>
+  		<span class="icon-bar"></span>
+  		<span class="icon-bar"></span>
+  		<span class="icon-bar"></span>
+  	  </button>
+
+      <a class="navbar-brand" href="https://www.dandiarchive.org/"><img src="https://www.dandiarchive.org/assets/dandi_logo.svg" alt="DANDI" /></a>
+  	</div>
+  	<div class="collapse navbar-collapse" id="navbar-collapse-1">
+  	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="https://dandiarchive.org">Data Portal</a></li>
+  		<li><a href="https://www.dandiarchive.org/handbook/">Documentation</a></li>
+  		<li><a href="http://hub.dandiarchive.org">DandiHub</a></li>
+  		  <!--
+  		<li><a href="https://www.dandiarchive.org/research">Research</a></li>
+  		<li><a href="https://www.dandiarchive.org/publications">Publications</a></li>
+  		-->
+  		<li><a href="https://www.dandiarchive.org/allnews">News</a></li>
+  		<li><a href="https://www.dandiarchive.org/blog">Blog</a></li>
+  		<li><a href="https://www.dandiarchive.org/team">Team</a></li>
+  		  <!--
+  		<li><a href="https://www.dandiarchive.org/collab">Collaborators</a></li>
+  		-->
+  		<li><a href="https://www.dandiarchive.org/vacancies">Openings</a></li>
+  	  </ul>
+  	</div>
+  </div>
+</div>
+
+
+
+    
+    <div class="container-fluid">
+      <div class="row">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">External Links in NWB and DANDI</h1>
+    <p class="post-meta">
+      <time datetime="2022-03-03T00:00:00+00:00" itemprop="datePublished">
+        Mar 3, 2022
+      </time>
+       •
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Saksham Sharda, CatalystNeuro</span>
+      </span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="external-files-in-nwb">External Files in NWB</h2>
+<p>External Files: video/audio files that are part of the experiment but are not stored in NWB as HDF5 format.</p>
+
+<h3 id="the-need-for-external-files">The need for external files</h3>
+<p>Neurophysiology experiments often include natural videos (such as behaving animals), which need to be stored with the neurophysiological recordings in order to ensure maximal reusability of the data. These videos are commonly stored with lossy compression (e.g. h264 in an .mp4 file), which allows them to achieve very high compression ratios. It is possible to read these videos frame-by-frame, and store them in HDF5, but since HDF5 is not able to access popular video codecs like h264, the volume of the video in the NWB file is much larger (even when using the available compression algorithms like GZIP). NWB has an option to avoid storing these altogether by linking to these external video files using a relative path to that file on disk. This relative path is stored in the ImageSeries neurodata_type storing it as an attribute of a string dtype. We also need to publish these video linked NWB files in an archive (e.g. in DANDI). For DANDI, which renames and reorganizes the the NWB files, this requires not only uploading the video file on the archive but also changing the path attribute of the ImageSeries to reflect the new file names.</p>
+
+<p>To implement this, we have created a formal naming convention for these video files relative to the NWB files’ path. In addition, these video files are also placed in a specific folder structure relative to the new location of the NWB file during the <code class="language-plaintext highlighter-rouge">dandi organize</code> call.</p>
+
+<p>Internally the steps are as follows:</p>
+
+<ol>
+  <li>Organizing and renaming the video files with one of move/copy/symlink/hardlink in the new folder structure.</li>
+  <li>Updating the value of the <code class="language-plaintext highlighter-rouge">external_file</code> attribute in the NWB files.</li>
+  <li>Uploading on DANDI.</li>
+</ol>
+
+<p><strong>Note</strong>: this solution is specifically for natural videos like those of behaving animals. There are other types of image sequences like image stacks from optical physiology, which do not use codecs like h264; these types of videos can be copied into an HDF5 file.</p>
+
+<h2 id="example-re-organization">Example re-organization</h2>
+
+<h3 id="original-folder-organization">Original folder organization</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>├── nwbfiles
+│   ├── test1_0_0.nwb
+│   └── test1_1_1.nwb
+└── video_files
+    ├── test1_0.avi
+    ├── test1_1.avi
+    ├── test2_0.avi
+    └── test2_1.avi
+</code></pre></div></div>
+<p>With the path attribute as: <code class="language-plaintext highlighter-rouge">image_series.external_files=["../video_files/test1_0.avi", "../video_files/test1_1.avi"]</code></p>
+
+<h3 id="after-dandi-organize">After <code class="language-plaintext highlighter-rouge">dandi organize</code></h3>
+<p>The renaming pattern is as follows <code class="language-plaintext highlighter-rouge">/&lt;nwbfile_name&gt;/{ImageSeries UUID}_external_file_{number}.mp4</code>.
+This UUID is that assigned to the <code class="language-plaintext highlighter-rouge">ImageSeries</code> datatype when its created. Thus its possible to lookup a video file linked to an NWB file and vice versa.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>└── dandi_organized
+    ├── sub-mouse0
+    │   ├── sub-mouse0_ses-sessionid0_image
+    │   │   ├── 933f8cf6-9e4b-405f-8cad-cc031d1fafc9_external_file_0.avi
+    │   │   └── 933f8cf6-9e4b-405f-8cad-cc031d1fafc9_external_file_1.avi
+    │   └── sub-mouse0_ses-sessionid0_image.nwb
+    └── sub-mouse1
+        ├── sub-mouse1_ses-sessionid1_image
+        │   ├── 03137112-9d42-46b6-9046-45bc9aa7eb5e_external_file_0.avi
+        │   └── 03137112-9d42-46b6-9046-45bc9aa7eb5e_external_file_1.avi
+        └── sub-mouse1_ses-sessionid1_image.nwb
+</code></pre></div></div>
+<p>With the renamed path attribute as</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>image_series.external_files=
+["sub-mouse0_ses-sessionid0_image/933f8cf6-9e4b-405f-8cad-cc031d1fafc9_external_file_0.avi",
+"sub-mouse0_ses-sessionid0_image/933f8cf6-9e4b-405f-8cad-cc031d1fafc9_external_file_1.avi"]
+</code></pre></div></div>
+
+<h2 id="code-walkthrough">Code Walkthrough</h2>
+
+<ul>
+  <li><strong>Register</strong> dataset on DANDI (staging)</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd dandi_organized
+dandi download "https://gui-staging.dandiarchive.org/#/dandiset/101391/draft"
+</code></pre></div></div>
+
+<ul>
+  <li><strong>Organize</strong></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd dandi_organized
+dandi organize -f "copy" --update-external-file-paths --media-files-mode "copy" "/nwbfiles"
+</code></pre></div></div>
+<p><strong>–modify-external-file-fields</strong> option is a flag.</p>
+
+<p>If active, the organise operation modifies the <code class="language-plaintext highlighter-rouge">external_file</code> field of an <code class="language-plaintext highlighter-rouge">ImageSeries</code> that holds the local location of an associated video file. It changes the value to the new name as per the convention above.
+If no <code class="language-plaintext highlighter-rouge">external_file</code> field found in all nwb files, but this option is active, then it logs a warning.
+If any NWB file’s <code class="language-plaintext highlighter-rouge">ImageSeries</code> has a <code class="language-plaintext highlighter-rouge">external_file</code>, but this option is not specified, then it raises a <code class="language-plaintext highlighter-rouge">ValueError</code> to avoid breaking the link.</p>
+
+<p><strong>–media-files-mode</strong> can be any of copy/move/symlink/hardlink.</p>
+
+<p>This can only be specified if the –modify-external-file-fields flag is True.
+This is an optional argument, if not specified it defaults to “symlink”: an efficient way to deal with possibly large video files.</p>
+
+<ul>
+  <li><strong>Validate</strong></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dandi validate
+</code></pre></div></div>
+
+<ul>
+  <li><strong>Upload</strong></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dandi upload -i dandi-staging "/dandi_organized"
+</code></pre></div></div>
+
+<p>Example dandiset <a href="https://gui-staging.dandiarchive.org/#/dandiset/100953/draft/files?location=">here</a></p>
+
+<ul>
+  <li><strong>download</strong></li>
+</ul>
+
+<p>This dataset can then be downloaded using:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir dandi_download
+cd dandi_download
+dandi download "https://gui-staging.dandiarchive.org/#/dandiset/101391/draft"
+</code></pre></div></div>
+<p>The folder will contain all the video files along with the dandi metadata .yml and .nwb files.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <div id="footer" class="panel">
+  <div class="panel-footer">
+	<div class="container-fluid">
+	  <div class="row">
+		<div class="col-sm-4">
+
+		  <p>&copy 2019-2024 DANDI contributors</p>
+		  <p>Site adapted from
+			  <a href="https://github.com/mpa139/allanlab">Allan Lab</a>.
+			  <a href="https://www.dandiarchive.org/aboutwebsite.html"> Details here.</a>
+     	  </p>
+		</div>
+		<div class="col-sm-4">
+		  Funding/In-Kind Support:<br />
+		  - <a href="https://braininitiative.nih.gov/">BRAIN Initiative</a><br />
+		  - <a href="https://www.nimh.nih.gov/index.shtml">NIMH</a><br />
+		  - <a href="https://aws.amazon.com/opendata/">AWS Open Data</a><br />
+			<p></p>
+		</div>
+		<div class="col-sm-4">
+		  Contact: <br />
+			- info at dandiarchive dot org<br />
+			- twitter: <a href="https://twitter.com/dandiarchive">@dandiarchive</a><br />
+			- GitHub: <a href="https://github.com/dandi">github.com/dandi</a><br />
+			<p></p>
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://www.dandiarchive.org/js/bootstrap.min.js"></script>
+
+
+  </body>
+
+</html>
