@@ -18,6 +18,7 @@ url: https://www.dandiarchive.org
 include:
   - .htaccess
   - _pages
+  - .well-known
 
 sass:
   sass_dir: _sass
