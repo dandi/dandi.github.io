@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Using DANDI on DANDI</title>
+    <link>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/</link>
+    <description>Recent content in Using DANDI on DANDI</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Register and Login</title>
+      <link>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/10_register/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/10_register/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Upload Data</title>
+      <link>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/20_upload/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/20_upload/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Download Data</title>
+      <link>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/30_download/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/30_download/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Validate Data</title>
+      <link>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/40_validate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/40_validate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Organize Data</title>
+      <link>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/50_organize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/50_organize/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>API Reference</title>
+      <link>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/60_api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/60_api/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Command Line Interface</title>
+      <link>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/70_cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/70_cli/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python Client</title>
+      <link>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/80_python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/80_python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Frequently Asked Questions</title>
+      <link>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/90_faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dandi-hugo-example/docs/10_using_dandi/90_faq/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

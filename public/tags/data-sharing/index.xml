@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Sharing on DANDI</title>
+    <link>http://localhost:1313/dandi-hugo-example/tags/data-sharing/</link>
+    <description>Recent content in Data Sharing on DANDI</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 12 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/dandi-hugo-example/tags/data-sharing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DANDI: A data archive and collaboration space for neurophysiology</title>
+      <link>http://localhost:1313/dandi-hugo-example/blog/2021/09/12/dandi-a-data-archive-and-collaboration-space-for-neurophysiology/</link>
+      <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dandi-hugo-example/blog/2021/09/12/dandi-a-data-archive-and-collaboration-space-for-neurophysiology/</guid>
+      <description>&lt;p&gt;DANDI is a &lt;a href=&#34;https://braininitiative.nih.gov/funded-awards/dandi-distributed-archives-neurophysiology-data-integration&#34;&gt;US BRAIN Initiative supported data archive&lt;/a&gt; for publishing and sharing neurophysiology data including intracellular and extracellular electrophysiology, optophysiology, and behavioral time-series, and images from immunostaining experiments.  For example, data from experimental techniques like patch clamps, silicon probes, and calcium imaging can be published on DANDI. So can data from lightsheet microscopy experiments when combined with associated MRI data.&lt;/p&gt;&#xA;&lt;p&gt;DANDI allows scientists to publish “dandisets,” collections of data from neuroscience experiments that are often associated with specific papers or projects. DANDI is built to scale with the growing data engineering needs of the community and can easily receive and publish TBs of data for free supported by the &lt;a href=&#34;https://registry.opendata.aws/dandiarchive/&#34;&gt;AWS public dataset program&lt;/a&gt;. It also uses best practices in metadata curation using &lt;a href=&#34;https://github.com/dandi/dandischema&#34;&gt;the DANDI schema&lt;/a&gt; and allows users to mint DOIs using Datacite for publishing dandisets.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

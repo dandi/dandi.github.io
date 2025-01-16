@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hola on DANDI</title>
+    <link>http://localhost:1313/dandi-hugo-example/tags/hola/</link>
+    <description>Recent content in Hola on DANDI</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 12 Dec 2024 14:27:32 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/dandi-hugo-example/tags/hola/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploring data with Neurosift</title>
+      <link>http://localhost:1313/dandi-hugo-example/blog/2018/01/04/explore-with-neurosift/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dandi-hugo-example/blog/2018/01/04/explore-with-neurosift/</guid>
+      <description>&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;&#xA;&lt;h4 class=&#34;alert-heading&#34;&gt;Note:&lt;/h4&gt;&#xA;&#xA;    Exploring data in Neurosift.&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;&amp;hellip;consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet&lt;/p&gt;&#xA;&lt;iframe&#xA;    width=&#34;100%&#34;&#xA;    height=&#34;1000&#34;&#xA;    src=&#34;https://neurosift.app/?p=/nwb&amp;url=https://api.dandiarchive.org/api/assets/352ad11b-bd4a-4303-8d8a-0794c75f94f9/download/&amp;dandisetId=001130&amp;dandisetVersion=draft&amp;tab=neurodata-items:neurodata-item:/processing/behavior/Elongation|TimeSeries@neurodata-item:/processing/ecephys/LFP/ElectricalSeries|ElectricalSeries&amp;tab-time=8876.828808537992,8998.560665232524,undefined&#34;&#xA;    title=&#34;YouTube video player&#34;&#xA;    frameborder=&#34;0&#34;&#xA;    allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34;&#xA;    allowfullscreen&gt;&#xA;&lt;/iframe&gt;</description>
+    </item>
+  </channel>
+</rss>
