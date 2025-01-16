@@ -2,8 +2,8 @@
 
 Start by cloning the repository:
 ```bash
-git clone https://github.com/catalystneuro/dandi-hugo-example --recursive
-cd dandi-hugo-example
+git clone https://github.com/dandi/dandi-about --recursive
+cd dandi-about
 ```
 
 ## Running the website locally

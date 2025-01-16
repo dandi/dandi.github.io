@@ -1,4 +1,4 @@
-baseURL: https://catalystneuro.github.io/dandi-hugo-example
+baseURL: https://about.dandiarchive.org/
 title: DANDI
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
@@ -125,10 +125,10 @@ params:
   url_latest_version: https://example.com
 
   # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-  github_repo: https://catalystneuro.github.io/dandi-hugo-example
+  github_repo: https://github.com/dandi/dandi-about
 
   # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-  github_project_repo: https://catalystneuro.github.io/dandi-hugo-example
+  github_project_repo: https://github.com/dandi/dandi-about
 
   # Specify a value here if your content directory is not in your repo's root directory
   # github_subdir: ""
