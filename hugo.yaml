@@ -200,7 +200,7 @@ params:
         url: https://github.com/dandi
         icon: fab fa-github
       - name: Slack
-        url: https://mit.enterprise.slack.com
+        url: https://dandiarchive.slack.com
         icon: fab fa-slack
 
 module:
