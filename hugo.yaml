@@ -192,7 +192,7 @@ params:
         url: https://twitter.com/dandiarchive
         icon: fab fa-twitter
       - name: Bluesky
-        url: https://bsky.app/profile/www.dandiarchive.org
+        url: https://bsky.app/profile/dandiarchive.org
         icon: fa-brands fa-bluesky
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
