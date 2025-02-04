@@ -6,7 +6,7 @@ git clone https://github.com/dandi/dandi-about --recursive
 cd dandi-about
 ```
 
-## Running the website locally
+### Running the website locally
 
 Install the latest version of Hugo: https://github.com/gohugoio/hugo/releases/tag/v0.139.4
 
