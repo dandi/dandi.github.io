@@ -1,4 +1,6 @@
-# DANDI Documentation example with Hugo
+# DANDI Project Website
+
+## How to contribute
 
 Start by cloning the repository:
 ```bash
