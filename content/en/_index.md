@@ -10,6 +10,7 @@ The data in the archive can be browsed using the [Data Portal](https://dandiarch
 
 {{< blocks/content-section title="Why DANDI?" >}}
 As an exercise, let's assume you lose all the data in your lab. What would you want from the archive? Our hope is that your answer to this question, the necessary data and metadata that you need, is at least what we should be storing.
+DANDI provides:
 
 1. A cloud-based platform to store, process, and disseminate data. You can use DANDI to collaborate and publish datasets.
 2. Open access to data to enable secondary uses of data outside the intent of the study.
