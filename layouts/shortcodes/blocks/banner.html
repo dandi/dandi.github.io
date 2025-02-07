@@ -1,0 +1,18 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<div class="home-banner">
+    <div class="container">
+        <div class="row">
+            <div class="banner-text{{ if .Get `show_news` }} col-md-8{{ else }} col-md-12{{ end }}">
+                {{ with .Get "title" }}<h1>{{ . }}</h1>{{ end }}
+                <div class="banner-content">
+                    {{ with .Inner }}{{ . | markdownify }}{{ end }}
+                </div>
+            </div>
+            {{ if .Get "show_news" }}
+            <div class="col-md-4">
+                {{ partial "news-sidebar.html" . }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="news-sidebar">
+    <h4>News</h4>
+    {{ range first 4 site.Data.news }}
+    <div class="news-item">
+        <div class="date">{{ .date }}</div>
+        <p><em>{{ .headline | safeHTML }}</em></p>
+    </div>
+    {{ end }}
+    <div class="see-all">
+        <h4><a href="/news">... see all News</a></h4>
+    </div>
+</div>

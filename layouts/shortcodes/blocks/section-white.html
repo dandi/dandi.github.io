@@ -1,0 +1,10 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<div class="td-box td-box--white position-relative td-box--gradient td-box--height-auto">
+    <div class="container td-outer">
+        <div class="row justify-content-center">
+            {{ with .Inner }}
+            {{ . }}
+            {{ end }}
+        </div>
+    </div>
+</div>
