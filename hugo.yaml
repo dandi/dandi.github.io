@@ -212,3 +212,7 @@ module:
   imports:
     - path: github.com/google/docsy
       disable: false
+
+services:
+  googleAnalytics:
+    ID: G-YFX0BFPME2
